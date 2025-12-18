@@ -13,8 +13,8 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 @RestControllerAdvice
 public class GlobalExceptionHandler{
 
-    @ExceptionHandler(ResourceNotFoundException.class) //runtime expection
-        public ResponseEntity<String> handleNotFound(ResourceNotFoundException ex){
+    @ExceptionHandler(ResourceNotFoundHandler.class) //runtime expection
+        public ResponseEntity<String> handleNotFound(ResourceNotFoundHandler ex){
             return new ResponseEntity<>(ex.getMessage(),HttpStatus.NOT_FOUND);
         }
 
