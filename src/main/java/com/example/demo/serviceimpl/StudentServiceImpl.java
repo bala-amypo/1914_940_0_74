@@ -19,7 +19,7 @@ public class StudentServiceImpl implements StudentService {
     
     public Student getStudentById(Long id){
         return studentRepository.findById(id)
-        .orElseThrow(()-> new ResourceNotFoundException("Student not found"));
+        .orElseThrow(()-> new ResourceNotFoundHandler("Student not found"));
     }
     public Student updatedata(Long id,Student student){
         Student exits=getStudentById(id);
