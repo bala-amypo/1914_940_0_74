@@ -8,4 +8,5 @@ public interface StudentService {
     Student getStudentById(Long id);
     Student updatedata(Long id,Student student);
     Student deletdata(Long id);
+    
 }
