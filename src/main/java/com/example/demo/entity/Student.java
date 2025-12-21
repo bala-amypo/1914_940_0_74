@@ -23,5 +23,4 @@ public class Student {
     @Column(unique=true)
     private String email;
 
-    
 }
