@@ -5,11 +5,12 @@ import lombok.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Size;
-@Entity
 
+@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+
 public class Student {
 
     @Id
