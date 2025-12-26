@@ -15,7 +15,7 @@ public class GlobalExceptionHandler{
         public ResponseEntity<String> handleNotFound(ResourceNotFoundHandler ex){
             return new ResponseEntity<>(ex.getMessage(),HttpStatus.NOT_FOUND);
         }
-
+    
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<Map<String,String>> handleMethod(MethodArgumentNotValidException mex){
         
